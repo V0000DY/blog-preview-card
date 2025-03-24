@@ -1,0 +1,108 @@
+:root {
+  --primary-color: hsl(0, 0%, 7%);
+  --secondary-color: hsl(0, 0%, 42%);
+  --background-color: hsl(47, 88%, 63%);
+  --container-color: hsl(0, 0%, 100%);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --font-family: "Figtree", sans-serif;
+  --font-size: 16px;
+  --header-font-size: 22px;
+  --paragraph-font-size: var(--font-size);
+}
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  min-height: 100vh;
+}
+
+h1 {
+  color: var(--primary-color);
+  transition: color 0.2s ease;
+  font-size: var(--header-font-size);
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+h1:hover {
+  color: var(--background-color);
+  cursor: pointer;
+}
+
+p {
+  color: var(--secondary-color);
+  font-size: var(--paragraph-font-size);
+  margin-bottom: 0;
+}
+
+.card__image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: var(--container-color);
+  box-shadow: 0px 0px 10px var(--shadow-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 340px;
+}
+
+.card__image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  border-radius: 10px;
+}
+
+.card__category {
+  display: inline-block;
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  font-weight: 900;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card__text {
+  line-height: 1.5;
+}
+
+.card__author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.card__author-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.card__author-name {
+  font-size: 16px;
+  font-weight: 900;
+}
