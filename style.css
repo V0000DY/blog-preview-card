@@ -50,30 +50,22 @@ p {
 .card {
   background-color: var(--container-color);
   box-shadow: 10px 10px 0px var(--shadow-color);
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 20px 0;
   padding: 20px;
   border: 1px solid var(--shadow-color);
   border-radius: 20px;
   max-width: 320px;
 }
 
-.card__image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.card__content {
+.card__body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
-  border-radius: 10px;
+  align-items: flex-start;
 }
 
 .card__category {
@@ -102,7 +94,7 @@ p {
   height: 30px;
 }
 
-.card__author-name {
+.card__author-text {
   font-size: 12px;
   font-weight: 900;
 }
